@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>ServletDemo</display-name>
+
+  <servlet>
+    <servlet-name>SimpleServlet</servlet-name>
+    <servlet-class>com.stasiamba.servletdemo.controller.SimpleServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ErrorServlet</servlet-name>
+    <servlet-class>com.stasiamba.servletdemo.controller.ErrorServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>com.stasiamba.servletdemo.controller.RequestServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.stasiamba.servletdemo.controller.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>FormDemoServlet</servlet-name>
+    <servlet-class>com.stasiamba.servletdemo.controller.FormDemoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SimpleServlet</servlet-name>
+    <url-pattern>/simpleServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>ErrorServlet</servlet-name>
+    <url-pattern>/errorServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/requestServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/searchServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FormDemoServlet</servlet-name>
+    <url-pattern>/FormDemoServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
